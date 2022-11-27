@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <title>Form</title>
+  </head>
+  <body>
+    <header id="header">
+      <section class="order">
+        <section class="your-order">
+          <h3 class="your-order__header">
+            <span class="material-symbols-outlined"> content_paste </span>
+            your order
+          </h3>
+          <table class="your-order__tab">
+            <tr>
+              <th>items</th>
+              <th>details</th>
+              <th>prise</th>
+              <th>delivery</th>
+            </tr>
+            <tr>
+              <td>2 documents</td>
+              <td>2 languages</td>
+              <td>$ 696.06</td>
+              <td>48 hours*</td>
+            </tr>
+          </table>
+        </section>
+        <div class="order-buttons">
+          <button>place order</button>
+          <button>print a quote</button>
+        </div>
+      </section>
+      <section class="help-center">
+        <h3 class="help-center__header">
+          <span class="material-symbols-outlined"> support </span>
+          help center
+        </h3>
+        <p>
+          if you need asistance while placing your order, contact one of our
+          beloved Project Manager by phone or email
+        </p>
+        <a href="tel:+971(0)555555">+971(0)555555</a>
+        <a href="mailto:help@qtest.com">help@qtest.com</a>
+      </section>
+    </header>
+    <main>
+      <form class="translation-type">
+        <h3 class="translation-type__header">
+          select what you want to translate
+        </h3>
+        <div class="translation-type__item__wrap">
+          <input
+            type="radio"
+            id="website"
+            name="type-doc"
+            value="website"
+            class="translation-type__checkbox"
+          />
+          <label for="website">
+            <div class="translation-type__item">
+              <img src="./img/website.JPG" alt="" />
+              <p>Website</p>
+            </div>
+          </label>
+          <input
+            type="radio"
+            id="documents"
+            name="type-doc"
+            value="documents"
+            class="translation-type__checkbox"
+          />
+          <label for="documents">
+            <div class="translation-type__item">
+              <img src="./img/documents.JPG" alt="" />
+              <p>Documents</p>
+            </div>
+          </label>
+          <input
+            type="radio"
+            id="account"
+            name="type-doc"
+            value="account"
+            class="translation-type__checkbox"
+          />
+          <label for="account">
+            <div class="translation-type__item">
+              <img src="./img/social.JPG" alt="" />
+              <p>Social Account</p>
+            </div>
+          </label>
+        </div>
+      </form>
+      <ol>
+        <li class="list-item upload-documents">
+          <h3 class="upload-documents__header">Upload your documents</h3>
+          <small>(Doc, Docx, Text, Pdf, Markdown)</small>
+
+          <button>
+            <h4>
+              <span class="material-symbols-outlined"> cloud_upload </span
+              >Upload a new file
+            </h4>
+          </button>
+          <table>
+            <tr>
+              <th>file name</th>
+              <th>file size</th>
+              <th>number of words</th>
+              <th>remove</th>
+            </tr>
+            <tr>
+              <td>business_operations.docx</td>
+              <td>78kb</td>
+              <td>842</td>
+              <td><span class="material-symbols-outlined"> delete </span></td>
+            </tr>
+            <tr>
+              <td>business_finansial.docx</td>
+              <td>26kb</td>
+              <td>2.326</td>
+              <td><span class="material-symbols-outlined"> delete </span></td>
+            </tr>
+          </table>
+        </li>
+        <li class="list-item languages">
+          <h3 class="upload-documents__header">
+            Choose your languages pairings
+          </h3>
+          <div class="from">
+            <span class="from-to">from</span>
+            <select name="lang-from">
+              <option value="value1">French</option>
+              <option value="value2" selected>English</option>
+              <option value="value3">Deutsch</option>
+            </select>
+          </div>
+          <div class="to">
+            <span class="from-to">to</span>
+            <select name="lang-to">
+              <option value="value1" selected>Arabic</option>
+              <option value="value2">Finnish</option>
+              <option value="value3">Chinese</option>
+            </select>
+          </div>
+          <div class="add-wrap">
+            <select name="lang-to-more">
+              <option value="value1" selected>Kurdish</option>
+              <option value="value2">Finnish</option>
+              <option value="value3">Chinese</option>
+            </select>
+            <span class="material-symbols-outlined"> delete </span>
+          </div>
+          <button name="lang-to-more-add" class="add-button" type="button">
+            + add
+          </button>
+        </li>
+        <div class="three-four__wrap">
+          <li class="list-item three">
+            <h3 class="upload-documents__header">Select your desired tone</h3>
+            <form class="desired-tone">
+              <div class="desired-tone__item__wrap">
+                <input
+                  type="radio"
+                  id="friendly"
+                  name="tone"
+                  value="friendly"
+                  class="desired-tone__checkbox"
+                />
+                <label for="friendly">
+                  <div class="desired-tone__label__wrap">
+                    <img src="./img/frendly.JPG" alt="" />
+                    <p>Friendly / Casual</p>
+                  </div>
+                </label>
+                <input
+                  type="radio"
+                  id="corporate"
+                  name="tone"
+                  value="corporate"
+                  class="desired-tone__checkbox"
+                />
+                <label for="corporate">
+                  <div class="desired-tone__label__wrap">
+                    <img src="./img/corporate.JPG" alt="" />
+                    <p>Corporate / Pro</p>
+                  </div>
+                </label>
+                <input
+                  type="radio"
+                  id="media"
+                  name="tone"
+                  value="media"
+                  class="desired-tone__checkbox"
+                />
+                <label for="media">
+                  <div class="desired-tone__label__wrap">
+                    <img src="./img/media.JPG" alt="" />
+                    <p>Media / Formal</p>
+                  </div>
+                </label>
+              </div>
+            </form>
+          </li>
+          <li class="list-item four">
+            <h3 class="upload-documents__header">
+              Tell us how urgent this job is
+            </h3>
+            <input
+              type="range"
+              id="range"
+              name="volume"
+              min="1"
+              max="10"
+              list="marks"
+            />
+            <label for="range"></label>
+            <datalist id="marks">
+              <option value="1" label="I got time"></option>
+              <option value="5" label="Average"></option>
+              <option value="10" label="Yesterday"></option>
+            </datalist>
+
+            <section class="timeline-info">
+              <header class="timeline-info__header">
+                <img src="./img/info.JPG" alt="" />
+                <h3>timeline info</h3>
+              </header>
+              <p>
+                With an <span>average</span> timeline set up, our expert
+                translator can take a reasonable amount of time perfecting your
+                translation
+              </p>
+            </section>
+          </li>
+        </div>
+        <li class="list-item">Sign up and choose a payment method</li>
+      </ol>
+    </main>
+    <footer id="footer">
+      <input type="checkbox" id="agree" />
+      <label for="agree">
+        I agree to the
+        <a href="#">Term & Conditions</a>
+      </label>
+    </footer>
+  </body>
+</html>

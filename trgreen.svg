@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" 
+width="200" 
+height="200">
+<line x1="0" x2="0" y1="0" y2="200" stroke="rgb(98,201,197)" fill="transparent" stroke-width="8"/>
+<path d="M85 85 l 50 0 l -25 35  Z" fill="rgb(98,201,197)" stroke="rgb(98,201,197)"/>
+</svg>
